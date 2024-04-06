@@ -10,7 +10,7 @@ class _BotCommands:
         self.YtdlCommand = [f"ytdl11{CMD_SUFFIX}", f"y11{CMD_SUFFIX}"]
         self.LeechCommand = [f"leech11{CMD_SUFFIX}", f"l11{CMD_SUFFIX}"]
         self.QbLeechCommand = [f"qbleech11{CMD_SUFFIX}", f"ql11{CMD_SUFFIX}"]
-        self.JdLeechCommand = [f"jdLeech{11CMD_SUFFIX}", f"jl11{CMD_SUFFIX}"]
+        self.JdLeechCommand = [f"jdLeech11{CMD_SUFFIX}", f"jl11{CMD_SUFFIX}"]
         self.YtdlLeechCommand = [f"ytdlleech11{CMD_SUFFIX}", f"yl11{CMD_SUFFIX}"]
         self.CloneCommand = f"clone{CMD_SUFFIX}"
         self.CountCommand = f"count{CMD_SUFFIX}"
