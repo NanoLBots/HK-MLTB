@@ -73,7 +73,7 @@ async def stats(_, message):
     swap = swap_memory()
     memory = virtual_memory()
     stats = (
-        f"<b>Commit Date:</b> {last_commit}\n\n"
+        f"<b>Commit Date:</b> {last_commit}"
         f"<b>Bot Uptime:</b> {get_readable_time(time() - botStartTime)}\n"
         f"<b>OS Uptime:</b> {get_readable_time(time() - boot_time())}\n\n"
         f"<b>Total Disk Space:</b> {get_readable_file_size(total)}\n"
@@ -83,13 +83,10 @@ async def stats(_, message):
         f"<b>CPU:</b> {cpu_percent(interval=0.5)}%\n"
         f"<b>RAM:</b> {memory.percent}%\n"
         f"<b>DISK:</b> {disk}%\n\n"
-        f"<b>Physical Cores:</b> {cpu_count(logical=False)}\n"
-        f"<b>Total Cores:</b> {cpu_count(logical=True)}\n\n"
         f"<b>SWAP:</b> {get_readable_file_size(swap.total)} | <b>Used:</b> {swap.percent}%\n"
         f"<b>Memory Total:</b> {get_readable_file_size(memory.total)}\n"
         f"<b>Memory Free:</b> {get_readable_file_size(memory.available)}\n"
         f"<b>Memory Used:</b> {get_readable_file_size(memory.used)}\n\n"
-        f"<b>Powered By : @TomenBots<b>"
     )
     await sendMessage(message, stats)
 
