@@ -96,19 +96,19 @@ async def stats(_, message):
 
 async def start(client, message):
     buttons = ButtonMaker()
-    buttons.ubutton("Channel", "https://t.me/TomenBots")
-    buttons.ubutton("Owner", "https://t.me/BalaPriyan")
+    buttons.ubutton("Channel", "https://t.me/botsnano")
+    buttons.ubutton("Owner", "https://t.me/tusharbyas")
     reply_markup = buttons.build_menu(2)
     if await CustomFilters.authorized(client, message):
         start_string = f"""
-This bot can mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram.
+This bot can leech/mirror all your links|files|torrents to Google Drive or any rclone cloud or to telegram.
 Type /{BotCommands.HelpCommand} to get a list of available commands
 """
         await sendMessage(message, start_string, reply_markup)
     else:
         await sendMessage(
             message,
-            "You Are not authorized user! Contact Admin To Get Access @BalaPriyanB, /n For Free Access Join @TomenBots",
+            "You Are not authorized user! /n For Free Access Join @nano_leech",
             reply_markup,
         )
 
